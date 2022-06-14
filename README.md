@@ -1,2 +1,5 @@
 # myways-next-eslint
-MyWays Next Eslint
+
+```
+npm i @myways.ai/next-eslint
+```
