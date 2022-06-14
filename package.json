@@ -1,0 +1,52 @@
+{
+  "name": "@myways.ai/next-eslint",
+  "version": "1.0.0",
+  "description": "ESLint & Prettier config for React & Next.js",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "config",
+    "eslint",
+    "lint",
+    "nextjs",
+    "prettier"
+  ],
+  "scripts": {
+    "style:all": "npm run style:lint && npm run style:prettier",
+    "style:lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx,json}'",
+    "style:lint-fix": "eslint --fix --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
+    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
+    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
+    "make-pretty-all": "prettier --write ."
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.7",
+    "@babel/preset-react": "^7.14.5",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.3.2"
+  },
+  "author": "MyWays <dev@myways.ai>",
+  "license": "GNU",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyWays-in/myways-next-eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MyWays-in/myways-next-eslint/issues"
+  },
+  "homepage": "https://github.com/MyWays-in/myways-next-eslint#readme"
+}
