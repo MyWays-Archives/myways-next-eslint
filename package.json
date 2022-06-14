@@ -40,7 +40,7 @@
     "prettier": "^2.3.2"
   },
   "author": "MyWays <dev@myways.ai>",
-  "license": "GNU",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MyWays-in/myways-next-eslint.git"
