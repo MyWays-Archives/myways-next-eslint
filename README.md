@@ -1,2 +1,2 @@
 # myways-next-eslint
-MyWays Next Aslant
+MyWays Next Eslint
