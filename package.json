@@ -17,12 +17,12 @@
     "prettier"
   ],
   "scripts": {
-    "style:all": "npm run style:lint && npm run style:prettier",
-    "style:lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx,json}'",
-    "style:lint-fix": "eslint --fix --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
-    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
-    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
-    "make-pretty-all": "prettier --write ."
+    "check:all": "npm run check:lint && npm run check:css && npm run check:format",
+    "check:lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx}\"",
+    "check:lint-quiet": "eslint --quiet --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx}\"",
+    "check:format": "prettier --ignore-path .gitignore --check \"**/*.{js,jsx,ts,tsx}\"",
+    "fix:lint": "eslint --fix --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx}\"",
+    "fix:format": "prettier --ignore-path .gitignore --write ."
   },
   "peerDependencies": {
     "@babel/core": "^7.15.5",
